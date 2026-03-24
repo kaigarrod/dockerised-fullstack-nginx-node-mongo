@@ -22,6 +22,7 @@ Only the frontend is exposed publicly, while backend and database services remai
 ```bash
 docker compose up -d --build
 ```
+Then visit
 ```bash
 http://localhost
 ```
