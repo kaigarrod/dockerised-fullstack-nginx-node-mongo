@@ -1,21 +1,30 @@
-# Simple Full-stack application
+# Simple Full-Stack Dockerised Application
 
-This is a simple full-stack application demonstrating a containerised architecture using Docker.
+This project demonstrates a containerised full-stack application using Docker.
 
-## Application Architecture 
+---
+
+## 🧱 Architecture 
 
 **Browser** -> **nginx** -> **backend** -> **database** -> **response**
 
-This is a containerised full-stack app
-The Nginx serves the frontend and proxies API requests to a Node backend
-The Node backend fetches the data from a mongoDB.
-All servers are containerised within Docker to allow each application to communicate over a shared network.
-With this architecture it is set up so only the frontend is exposed publicly. 
-The applications communicate over the shared network to request and respond to required queries.
+- **Nginx** serves the frontend and acts as a reverse proxy for API requests
+- **Backend (Node.js)** handles API requests and communicates with the database
+- **MongoDB** stores application data
+- All services run in separate Docker containers and communicate over a shared network
 
-### How to run?
+Only the frontend is exposed publicly, while backend and database services remain internal.
 
-> **docker compose up -d --build**
+---
+
+## 🚀 How to Run
+
+```bash
+docker compose up -d --build
+```
+```bash
+http://localhost
+```
 
 
 ### What I have learnt through completing this project?
