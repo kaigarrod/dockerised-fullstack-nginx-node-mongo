@@ -1,6 +1,6 @@
 # Simple Full-Stack Dockerised Application
 
-This project demonstrates a containerised full-stack application using Docker.
+This project is intended to demonstrate containerised system architecture rather than application complexity.
 
 ---
 
