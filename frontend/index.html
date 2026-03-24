@@ -5,17 +5,19 @@
 <ul id="movies"></ul>
 
 <script>
-    fetch('/api/movies')
+    fetch('/api/films')
         .then(res => res.json())
         .then(data => {
-            const list = document.getElementById('movies');
-            data.forEach(movie => {
+            const list = document.createElement('ul');
+
+            data.forEach(film => {
                 const li = document.createElement('li');
-                li.textContent = movie;
+                li.textContent = film.name;
                 list.appendChild(li);
             });
-        })
-        .catch(err => console.error(err));
+
+            document.body.appendChild(list);
+        });
 </script>
 </body>
 </html>
