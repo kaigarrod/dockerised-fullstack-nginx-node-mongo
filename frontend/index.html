@@ -5,7 +5,7 @@
 <ul id="movies"></ul>
 
 <script>
-    fetch('/api/films')
+    fetch('/api/movies')
         .then(res => res.json())
         .then(data => {
             const list = document.getElementById('movies');
