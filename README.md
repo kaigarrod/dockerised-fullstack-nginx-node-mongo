@@ -15,7 +15,7 @@ The applications communicate over the shared network to request and respond to r
 
 ### How to run?
 
-docker compose up -d --build 
+> **docker compose up -d --build**
 
 
 ### What I have learnt through completing this project?
